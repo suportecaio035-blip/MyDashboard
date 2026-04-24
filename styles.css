@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgb(87, 87, 87), rgb(62, 62, 62), rgb(22, 22, 22), rgb(25, 25, 25));
+    background-image: url(img/Black\ And\ White\ Art\ GIF\ by\ Pi-Slices.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Dashcmd{
+    background-image: url(img/Loop\ Satisfying\ GIF\ by\ xponentialdesign.gif);
+    color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    font-size: 80px;
+    
+
+
+}
+
+.senhas{
+    border-radius: 9px;
+    background-color: rgb(49, 190, 2);
+    color: white;
+    padding: 10px 70px;
+    border-style: groove;
+    font-size: 20px;
+    background-image: url(img/Skating\ Pokemon\ Go\ GIF\ by\ Caleb\ Linden\ Design.gif);
+    background-position: center;
+    background-size: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.search{
+    border-radius: 9px;
+    padding: 10px 40px;
+}
+
+.result{
+    border-radius: 15px;
+}
+.centralizar{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.hide{
+    display: none;
+}
