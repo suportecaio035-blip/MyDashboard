@@ -23,7 +23,7 @@ body{
 .bar_navegation{
     margin: 3px;
     font-family: grafiti;
-    font-size: 30px;
+    font-size: 23px;
     border-radius: 5px;
     color: white;
     border: solid;
@@ -35,6 +35,8 @@ body{
 .cx_navegation{
     position: absolute;
     top: 0px;
+    display: flex;
+    justify-content: center;
 
 }
 
