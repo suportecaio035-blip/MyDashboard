@@ -1,56 +1,105 @@
+@font-face {
+    font-family: "street"; /*nome da fonte*/
+    src: url(fonts/sweet_as_revenge/SWEET\ AS\ REVENGE.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "grafiti";
+    src: url(fonts/graffi_think/GraffiThink.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "tinta_escorre";
+    src: url(fonts/the_gunslinger_waterdrop/The\ Gunslinger_DEMO.ttf) format("truetype");
+}
+
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url(img/WhatsApp\ Image\ 2026-04-24\ at\ 13.12.04.jpeg);
+    margin: 10px;
     box-sizing: border-box;
-    background: linear-gradient(180deg, rgb(87, 87, 87), rgb(62, 62, 62), rgb(22, 22, 22), rgb(25, 25, 25));
-    background-image: url(img/Black\ And\ White\ Art\ GIF\ by\ Pi-Slices.gif);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding: 5%;
 }
 
-.Dashcmd{
-    background-image: url(img/Loop\ Satisfying\ GIF\ by\ xponentialdesign.gif);
-    color: transparent;
-    background-clip: text;
-    background-position: center;
-    background-size: contain;
-    text-align: center;
-    font-size: 80px;
-    
-
-
-}
-
-.senhas{
-    border-radius: 9px;
-    background-color: rgb(49, 190, 2);
+.bar_navegation{
+    margin: 3px;
+    font-family: grafiti;
+    font-size: 30px;
+    border-radius: 5px;
     color: white;
-    padding: 10px 70px;
-    border-style: groove;
-    font-size: 20px;
+    border: solid;
+    border-color: #620272;
+    box-shadow: 0px 0px 20px white;
+    background-color: #121212;
+}
+
+.cx_navegation{
+    position: absolute;
+    top: 0px;
+
+}
+
+.btn_xsl{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
     background-image: url(img/Skating\ Pokemon\ Go\ GIF\ by\ Caleb\ Linden\ Design.gif);
     background-position: center;
-    background-size: 50px;
+    background-size: 43px;
+    box-shadow: 0px 0px 15px white;
+    border: solid;
     cursor: pointer;
-    margin-bottom: 20px;
+    font-family: "grafiti";
+    font-size: 25px;
 
-}
-
-.search{
-    border-radius: 9px;
-    padding: 10px 40px;
-}
-
-.result{
-    border-radius: 15px;
-}
-.centralizar{
-    justify-content: center;
-    display: flex;
     
 }
+
+.btn_search{
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 15px;
+    
+}
+.box_central{
+    width: 99%;
+    height: 300px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px white;
+    background-color: #121212 ;
+    opacity: 0.96;
+}
+
 
 .hide{
     display: none;
+}
+
+.cx_xsl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.colun_central{
+    font-family: "grafiti";
+    font-size: larger;
+    font-style: italic;
+    font-weight: 10;
+    border-radius: 20px;
+    min-width: 190px;
+    min-height: 30px;
+    background: linear-gradient(135deg, #3a0443, #2f0087);
+    color: white;
+    
 }
