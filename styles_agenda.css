@@ -24,6 +24,7 @@ body{
     align-items: center;
     width: 100%;
     overflow-x: hidden;
+    justify-content: center;
 }
 
 .bar_navegation{
@@ -58,9 +59,16 @@ body{
 }
 
 .manut_all{
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 99%;
     border-radius: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px #ffff00;
+}
+
+.txt_manut{
+    color: white;
+    font-family: "grafiti";
+    text-shadow: 0px 0px 7px rgb(255, 196, 0);
 
 }
