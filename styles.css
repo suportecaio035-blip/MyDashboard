@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "street"; /*nome da fonte*/
     src: url(fonts/sweet_as_revenge/SWEET\ AS\ REVENGE.ttf) format(truetype);
@@ -53,24 +54,38 @@ body{
     position: absolute;
     top: 0px;
     box-shadow: 0px 0px 9px #620272;
-
+    
 }
 
 .btn_xsl{
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
-    background-image: url(img/Skating\ Pokemon\ Go\ GIF\ by\ Caleb\ Linden\ Design.gif);
-    background-position: center;
-    background-size: 43px;
     box-shadow: 0px 0px 15px white;
-    border: solid;
+    background: linear-gradient(135deg, #3a0443, #2f0087);
+    border-style: groove;
     cursor: pointer;
     font-family: "grafiti";
     font-size: 25px;
 
-    
 }
+
+
+.skt{
+    width: 100px;
+    position: absolute;
+    /* Nome da animação | tempo | tipo | infinito */
+    animation: skt_move 4s linear infinite;
+}
+
+@keyframes skt_move{
+        0% {
+            left: -50px;
+        }
+        100% {
+            left: 90%;
+        }
+    }
 
 .btn_search{
     border-radius: 20px;
@@ -103,6 +118,7 @@ body{
     justify-content: center;
     margin-top: 75px;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .centralizar{

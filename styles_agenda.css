@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "street"; /*nome da fonte*/
+    src: url(fonts/sweet_as_revenge/SWEET\ AS\ REVENGE.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "grafiti";
+    src: url(fonts/graffi_think/GraffiThink.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "tinta_escorre";
+    src: url(fonts/the_gunslinger_waterdrop/The\ Gunslinger_DEMO.ttf) format("truetype");
+}
+
+body{
+    background-image: url(img/WhatsApp\ Image\ 2026-04-24\ at\ 13.12.04.jpeg);
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bar_navegation{
+    margin: 1px;
+    font-family: grafiti;
+    font-size: 23px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    box-shadow: 0px 0px 9px #620272;
+    background-color: #121212;
+    width: 90%;
+    
+}
+
+.cx_navegation{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 90%;
+}
+
+.borda{
+    background-color: #121212;
+    width: 150%;
+    height: 28px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    box-shadow: 0px 0px 9px #620272;
+    
+}
