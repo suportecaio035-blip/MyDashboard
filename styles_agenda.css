@@ -16,7 +16,7 @@
 
 body{
     background-image: url(img/WhatsApp\ Image\ 2026-04-24\ at\ 13.12.04.jpeg);
-    margin: 0px;
+    margin: 10px;
     box-sizing: border-box;
     padding: 5%;
     display: flex;
@@ -55,4 +55,12 @@ body{
     top: 0px;
     box-shadow: 0px 0px 9px #620272;
     
+}
+
+.manut_all{
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+    margin-top: 150px;
+
 }

@@ -56,3 +56,31 @@ body{
     box-shadow: 0px 0px 9px #620272;
     
 }
+
+.btn_default{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    background: radial-gradient(#7051db, #7ffaff);
+    color: white;
+    font-family: "tinta_escorre";
+    font-size: 30px;
+    transition: transform 0.1 ease-in-out;
+    margin: 4px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.box{
+    justify-content: center;
+    display: flex;
+    width: 95%;
+    height: 500px;
+    align-items: center;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    
+}
