@@ -16,9 +16,12 @@
 .skt{
     width: 100px;
     position: absolute;
+    cursor: pointer;
     /* Nome da animação | tempo | tipo | infinito */
     animation: skt_move 4s linear infinite;
+    transition: transform 0.5s ease-in-out;
 }
+
 
 @keyframes skt_move{
         0% {
@@ -34,7 +37,12 @@
     text-align: center;
     padding: 10px 30px;
     font-size: 15px;
+    transition: transform 0.1s ease;
     
+}
+
+.btn_search:active{
+    transform: scale(0.95);
 }
 .box_central{
     width: 99%;
@@ -61,6 +69,11 @@
     margin-top: 75px;
     margin-bottom: 100px;
     position: relative;
+    transition: transform 0.1s ease;
+}
+
+.cx_xsl:active{
+    transform: scale(0.95);
 }
 
 .centralizar{

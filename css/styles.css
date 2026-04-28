@@ -38,6 +38,10 @@ body{
     transform: scale(0.9);
 }
 
+.bar_navegation:hover{
+    transform: translateY(7px);
+}
+
 
 
 .borda{
