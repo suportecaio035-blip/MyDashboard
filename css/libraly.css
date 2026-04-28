@@ -1,0 +1,30 @@
+
+.btn_default{
+    width: 100px;
+    height: 90px;
+    border-radius: 30px;
+    background: radial-gradient(#7051db, #7ffaff);
+    color: white;
+    font-family: "tinta_escorre";
+    font-size: 30px;
+    transition: transform 0.1 ease-in-out;
+    margin: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.box{
+    
+    justify-content: center;
+    display: flex;
+    width: 95%;
+    height: 200px;
+    align-items: center;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    
+}
