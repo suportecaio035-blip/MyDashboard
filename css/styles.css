@@ -8,6 +8,11 @@
     src: url(../fonts/the_gunslinger_waterdrop/The\ Gunslinger_DEMO.ttf) format("truetype");
 }
 
+* {
+    /* Remove o destaque azul ao tocar no celular */
+    -webkit-tap-highlight-color: transparent;
+}
+
 body{
     background-image: url(../img/WhatsApp\ Image\ 2026-04-24\ at\ 13.12.04.jpeg);
     margin: 0px;
