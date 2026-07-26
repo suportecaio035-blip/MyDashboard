@@ -1,5 +1,7 @@
 const fileInput = document.getElementById('fileInput');
+const searchInput = document.getElementById('texto');
 const container = document.getElementById('container_password');
+let dadosCarregados = [];
 
 fileInput.addEventListener('change', async (event) => {
   const file = event.target.files[0];
@@ -8,18 +10,29 @@ fileInput.addEventListener('change', async (event) => {
   try {
     const text = await file.text();
     const data = JSON.parse(text);
-    criarCards(data);
+    dadosCarregados = Array.isArray(data) ? data : [];
+    criarCards(dadosCarregados);
   } catch (err) {
     alert('Erro ao ler o arquivo JSON: ' + err.message);
   }
 });
 
+searchInput.addEventListener('input', () => {
+  const termo = searchInput.value.trim().toLowerCase();
+  const filtrados = dadosCarregados.filter((item) => {
+    const siteName = (item.site || item.service || '').toLowerCase();
+    return siteName.includes(termo);
+  });
+
+  criarCards(filtrados);
+});
+
 function criarCards(data) {
   container.innerHTML = '';
 
-  if (!Array.isArray(data)) {
+  if (!Array.isArray(data) || data.length === 0) {
     const p = document.createElement('p');
-    p.textContent = 'Formato inválido: o JSON deve ser um array de objetos.';
+    p.textContent = data && data.length === 0 ? 'Nenhum resultado encontrado.' : 'Formato inválido: o JSON deve ser um array de objetos.';
     container.appendChild(p);
     return;
   }
