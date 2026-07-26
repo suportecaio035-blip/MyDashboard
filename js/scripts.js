@@ -101,6 +101,7 @@ function criarCards(data) {
     actions.className = 'actions';
 
     const copyUserBtn = document.createElement('button');
+    copyUserBtn.className = 'btn-user'
     copyUserBtn.textContent = 'Copiar usuário';
     copyUserBtn.addEventListener('click', async () => {
       try {
@@ -113,6 +114,7 @@ function criarCards(data) {
     });
 
     const copyPassBtn = document.createElement('button');
+    copyPassBtn.className = 'btn-pass';
     copyPassBtn.textContent = 'Copiar senha';
     copyPassBtn.addEventListener('click', async () => {
       try {
