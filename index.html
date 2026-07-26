@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/senhas.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Gerador de Senhas</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="senhas.html">Senhas</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <input type="file" id="fileInput" accept="application/json">
+    <div class="search">
+        <ul>
+            <li><a>Início</a></li>
+            <li><a>Senhas</a></li>
+        </ul>
+    </div>
+
+    <div class="container_password" id="container_password">
+        <!-- Cards generated from JSON will appear here -->
+        <p class="hint">Escolha um arquivo JSON com a lista de contas para gerar os cartões.</p>
+    </div>
+
+
+
+
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
