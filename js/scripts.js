@@ -1,7 +1,24 @@
 const fileInput = document.getElementById('fileInput');
 const searchInput = document.getElementById('texto');
 const container = document.getElementById('container_password');
+const STORAGE_KEY = 'senhas_json_data';
 let dadosCarregados = [];
+
+function salvarDados(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+function carregarDadosSalvos() {
+  const salvo = localStorage.getItem(STORAGE_KEY);
+  if (!salvo) return [];
+
+  try {
+    return JSON.parse(salvo);
+  } catch (err) {
+    console.error('Erro ao carregar dados salvos:', err);
+    return [];
+  }
+}
 
 fileInput.addEventListener('change', async (event) => {
   const file = event.target.files[0];
@@ -11,6 +28,7 @@ fileInput.addEventListener('change', async (event) => {
     const text = await file.text();
     const data = JSON.parse(text);
     dadosCarregados = Array.isArray(data) ? data : [];
+    salvarDados(dadosCarregados);
     criarCards(dadosCarregados);
   } catch (err) {
     alert('Erro ao ler o arquivo JSON: ' + err.message);
@@ -26,6 +44,15 @@ searchInput.addEventListener('input', () => {
 
   criarCards(filtrados);
 });
+
+function restaurarDados() {
+  dadosCarregados = carregarDadosSalvos();
+  if (dadosCarregados.length > 0) {
+    criarCards(dadosCarregados);
+  }
+}
+
+restaurarDados();
 
 function criarCards(data) {
   container.innerHTML = '';

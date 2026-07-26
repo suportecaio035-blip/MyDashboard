@@ -2,8 +2,16 @@
 
 body { 
     color: #fff;
-    background-color: #2a0000;
+    background-color: #0F172A;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.navbar{
+    width: 100%;
+    background-color: #1E293B;
 }
 
 .hint{
@@ -14,16 +22,50 @@ body {
 
 .container_password{
     width: 100%;
-    max-width: 900px;
+    max-width: 12resum00px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
+@media(max-width: 900px){
+        .container_password{
+            grid-template-columns: 1fr;
+            font-size: 12px;
+        }
+    }
+.import{
+    background-color: #121212;
+    border: 1px solid #094b00;
+    border-radius: 10px;
+    align-self: center;
+    width: 10%;
+    max-width: 200px;
+    height: 10%;
+    min-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in;
+}
+
+.import:active{
+    transform: scale(0.9);
+}
+
+.green{
+    font
+    : #F8FAFC;
+}
+
+#fileInput{
+    display: none;
+}
 .card{
-    background-color: #160505;
+    background-color: #111827;
     box-shadow: 0 0 8px rgba(255,255,255,0.08);
+    border: 1px solid  #1E293B;
     border-radius: 8px;
     padding: 10px;
     display: grid;
@@ -54,9 +96,26 @@ input[type="text"]{
     max-width: 500px;
     margin: 16px auto 0;
     padding: 10px 12px;
-    border: 1px solid #8b5b5b;
-    border-radius: 8px;
+   
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:30px;
+    padding:18px 25px;
+    font-size:16px;
+
     outline: none;
+
+    box-shadow:0 0 15px rgba(16,185,129,.25);
+}
+
+input:focus[type="text"]{
+
+border-color:#10B981;
+
+box-shadow:0 0 15px rgba(16,185,129,.25);
+
+outline:none;
+
 }
 
 button{
