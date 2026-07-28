@@ -12,7 +12,10 @@ body {
 }
 
 .navbar{
-    width: 100%;
+    position: fixed;
+    top: 10px;
+
+    width: 98%;
     height: 70px;
     
     display: flex;
@@ -111,7 +114,7 @@ body {
     min-height:56px;
     
     align-self:center;
-    margin-top: 20px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,4 +247,35 @@ button:hover{
 .logo-icon{
     color: #10B981;  
     transition: .3s;
+}
+
+.footer-status{
+
+    position: fixed;
+    bottom: 1px;
+
+    width: 101%;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    background: rgba(17,24,39,.85);
+    backdrop-filter: blur(3px);
+
+    border: 1px solid #263548;
+
+    font-size: 9px;
+    
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.35);
+}
+
+.footer-status small{
+
+    display:block;
+    color:#64748B;
+    font-size:10px;
 }
