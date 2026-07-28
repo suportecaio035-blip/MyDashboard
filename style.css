@@ -85,6 +85,9 @@ body {
         .logo-icon{
             font-size: 40px;
         }
+        .navbar{
+            font-size: 11px;
+        }
     }
 @media(max-width: 500px){
         .container_password{
@@ -96,6 +99,9 @@ body {
         }
         .logo-icon{
             font-size: 25px;
+        }
+        .navbar{
+            font-size: 7px;
         }
     }
 
@@ -208,11 +214,31 @@ button:hover{
     transform: translateY(1px);
 }
 .btn-user{
+    background: #1E293B;
+    color: #F8FAFC;
 
+    border: 1px solid #334155;
+    border-radius: 12px;
+
+    padding: 7px 20px;
+
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .btn-pass{
+    background: #10B981;
+    color: #FFFFFF;
 
+    border: none;
+    border-radius: 12px;
+
+    padding: 7px 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 15px rgba(16,185,129,.25);
 }
 
 .logo-icon{
